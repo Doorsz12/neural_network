@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#gen {
+  user-select: none;
+}
+body {
+  background-color: black;
+}
+.element {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+#display {
+  color: white;
+}
+body {
+  display: flex;
+}
+#left, #right {
+  width: 50vw;
+  height: 100vh;
+}
+#right {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#r_table {
+  width: 80%;
+}
+.r_table_row {
+  padding: 1rem;
+  padding-inline: 2rem;
+  display: flex;
+  align-items: stretch;
+}
+.r_table_chart {
+  background-color: white;
+  align-self: stretch;
+}
+#saveData_status {
+  width: 5rem;
+  height: 5rem;
+  background-color: white;
+}

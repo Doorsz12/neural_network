@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MNIST generator</title>
+</head>
+<body>
+  <div id="left">
+      <div id="gen"></div>
+      <p id="display"></p>
+      <button type="button" onclick="display()">display</button>
+      <input type="number" name="model_label" id="model_label">
+      <input type="hidden" name="model_image" id="model_image">
+      <button onclick="sendData()">Send</button>
+      <button onclick="clearElements()">Reset</button>
+      <button onclick="addToLibrary()">Add to library</button>
+      <p id="result"></p>
+      <p id="data_json"></p>
+      <div id="saveData_status"></div>
+  </div>
+  <div id="right">
+      <p id="r_prediction">-</p>
+      <p id="r_accuracy">-</p>
+      <div id="r_table">
+        <div class="r_table_row" id="r_table_row_1">
+          <p class="r_table_p" id="r_table_p_1">0</p>
+          <div class="r_table_chart" id="r_table_chart_1"></div>
+        </div>
+        <div class="r_table_row" id="r_table_row_2">
+          <p class="r_table_p" id="r_table_p_2">1</p>
+          <div class="r_table_chart" id="r_table_chart_2"></div>
+        </div>
+        <div class="r_table_row" id="r_table_row_3">
+          <p class="r_table_p" id="r_table_p_3">2</p>
+          <div class="r_table_chart" id="r_table_chart_3"></div>
+        </div>
+        <div class="r_table_row" id="r_table_row_4">
+          <p class="r_table_p" id="r_table_p_4">3</p>
+          <div class="r_table_chart" id="r_table_chart_4"></div>
+        </div>
+        <div class="r_table_row" id="r_table_row_5">
+          <p class="r_table_p" id="r_table_p_5">4</p>
+          <div class="r_table_chart" id="r_table_chart_5"></div>
+        </div>
+        <div class="r_table_row" id="r_table_row_6">
+          <p class="r_table_p" id="r_table_p_6">5</p>
+          <div class="r_table_chart" id="r_table_chart_6"></div>
+        </div>
+        <div class="r_table_row" id="r_table_row_7">
+          <p class="r_table_p" id="r_table_p_7">6</p>
+          <div class="r_table_chart" id="r_table_chart_7"></div>
+        </div>
+        <div class="r_table_row" id="r_table_row_8">
+          <p class="r_table_p" id="r_table_p_8">7</p>
+          <div class="r_table_chart" id="r_table_chart_8"></div>
+        </div>
+        <div class="r_table_row" id="r_table_row_9">
+          <p class="r_table_p" id="r_table_p_9">8</p>
+          <div class="r_table_chart" id="r_table_chart_9"></div>
+        </div>
+        <div class="r_table_row" id="r_table_row_10">
+          <p class="r_table_p" id="r_table_p_10">9</p>
+          <div class="r_table_chart" id="r_table_chart_10"></div>
+        </div>
+      </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
